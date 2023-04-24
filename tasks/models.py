@@ -21,3 +21,10 @@ class Task(models.Model):
         related_name="tasks",
         on_delete=models.CASCADE,
     )
+
+
+    def task_count(self):
+        return self.tasks.count()
+
+    def __str__(self):
+        return self.name

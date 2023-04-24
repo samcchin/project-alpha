@@ -23,7 +23,7 @@
                 <tbody>
                     {% for project in list_projects %}
                     <tr>
-                        <td>{{ project.name }}</td>
+                        <td><a href="{% url 'show_project' project.id %}">{{ project.name }}</a></td>
                         <td>{{ project.task_count }}</td>
                     </tr>
                     {% endfor %}

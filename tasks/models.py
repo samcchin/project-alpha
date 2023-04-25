@@ -22,7 +22,6 @@ class Task(models.Model):
         on_delete=models.CASCADE,
     )
 
-
     def task_count(self):
         return self.tasks.count()
 
